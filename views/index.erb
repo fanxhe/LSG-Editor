@@ -1,9 +1,38 @@
 <html>
+<head>
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
+  <link rel="stylesheet" type="text/css" href="assets/css/module.css">
+</head>
 <body>
- <h1>Living Style Guide Editor</h1>
- <form method="post" action="/lsg">
-   <textarea name="code_lsg"></textarea>
-   <input type="submit"/>
- </form>
+  <div class="container-fluid">
+
+    <div class="row">
+     <h1>Living Style Guide Editor</h1>
+    </div>
+
+     <div class="row" >
+
+      <div class="col-xs-12 col-sm-12 col-md-12 ">
+        <form method="post" action="/lsg">
+          <div class="form-group col-xs-12 col-sm-0 col-md-3" ></div>
+          <div class="form-group col-xs-12 col-sm-4 col-md-4" >
+            <textarea name="code_lsg" class="form-control code-area" rows="35"></textarea>
+          </div>
+          <div class="form-group col-xs-12 col-sm-1 col-md-1">
+            <button type="submit" class="btn btn-default center-block"> Convert </button>
+          </div>
+          <div  class="form-group col-xs-12 col-sm-4 col-md-4 ">
+            <div id="iframe">
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>

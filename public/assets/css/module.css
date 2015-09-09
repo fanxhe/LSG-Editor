@@ -1,0 +1,15 @@
+.code-area {
+  background-color: #333333;
+  color: #fff;
+}
+
+.code-area:focus {
+  border-color: #24f4ae;
+}
+
+#iframe {
+
+  border: 1px solid #24f4ae;
+  height: 714px;
+
+}
