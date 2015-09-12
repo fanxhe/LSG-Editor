@@ -1,3 +1,11 @@
+.header{
+  height: 15%;
+}
+
+.header h1 {
+  margin: 0;
+}
+
 .code-area {
   background-color: #333333;
   color: #fff;
@@ -7,9 +15,26 @@
   border-color: #24f4ae;
 }
 
-#iframe {
+.button {
+  position: absolute;
+  right: -35px;
+  top: 300px;
+  z-index: 10;
+}
 
-  border: 1px solid #24f4ae;
+#iframe--container {
   height: 714px;
+}
 
+#iframe--container iframe:hover {
+  border: 1px solid #24f4ae;
+}
+
+.lsg--result {
+  height: 100%;
+  width: 100%;
+}
+
+.without-padding {
+  padding: 0;
 }
