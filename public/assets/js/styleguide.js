@@ -1,21 +1,40 @@
 
-function generateStyleGuide(event){
-  event.preventDefault();
+var generateStyleGuide = function(event){
 
+  event.preventDefault();
   var req = new XMLHttpRequest();
-  req.open('POST', '/lsg', false);
+  req.open('POST', '/lsg', true);
   req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+  req.onreadystatechange = function (e) {
+    if(req.readyState == 4){
+      if(req.status == 200){
+        createIframe(req.response);
+      }
+      else{
+        console.error("Error loading page\n");
+        createDivError();
+      }
+    }
+  }
   req.send("code_lsg=" + encodeURI(document.querySelector('textarea').value));
-  createIframe(req.response);
 }
 
-function createIframe(result){
+var createIframe = function(result){
 
   var iframeResult = document.createElement('iframe');
   iframeResult.className = 'lsg--result';
   iframeResult.src = 'data:text/html;charset=utf-8,'+ encodeURI(result);
   document.getElementById('iframe--container').innerHTML = "";
   document.getElementById('iframe--container').appendChild(iframeResult);
+}
+
+var createDivError = function(){
+
+  var divSmsError = document.createElement('div');
+  divSmsError.className = 'lsg--sms-error';
+  divSmsError.appendChild(document.createTextNode("Error loading page\n"));
+  document.getElementById('iframe--container').innerHTML = "";
+  document.getElementById('iframe--container').appendChild(divSmsError);
 }
 
 document.addEventListener('DOMContentLoaded', function() {
