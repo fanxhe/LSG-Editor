@@ -1,7 +1,7 @@
 require 'livingstyleguide'
 require 'sinatra'
 
-# EXAMPLES = %w{ colors.erb fonts.erb javascript.erb }
+#EXAMPLES = %w{ colors.erb fonts.erb javascript.erb }
 
 get '/' do
   doc = LivingStyleGuide::Document.new do
