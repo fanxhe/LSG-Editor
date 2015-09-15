@@ -1,11 +1,11 @@
 require 'livingstyleguide'
 require 'sinatra'
 
-#EXAMPLES = %w{ colors.erb fonts.erb javascript.erb }
+EXAMPLES = %w{ colors fonts }
 
 get '/' do
   doc = LivingStyleGuide::Document.new do
-    ERB.new(File.read("#{File.dirname(__FILE__)}/templates/colors.lsg.erb")).result
+    ERB.new(File.read("#{File.dirname(__FILE__)}/templates/#{EXAMPLES.sample}.lsg.erb")).result
   end
   erb :index, :locals => { :doc => doc }
 end
