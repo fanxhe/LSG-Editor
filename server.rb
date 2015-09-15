@@ -1,7 +1,7 @@
 require 'livingstyleguide'
 require 'sinatra'
 
-EXAMPLES = %w{ colors fonts }
+EXAMPLES = %w{ colors fonts markdown }
 
 get '/' do
   doc = LivingStyleGuide::Document.new do
