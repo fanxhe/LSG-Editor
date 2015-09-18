@@ -1,7 +1,8 @@
 require 'livingstyleguide'
 require 'sinatra'
+require 'haml'
 
-EXAMPLES = %w{ colors fonts markdown }
+EXAMPLES = %w{ colors fonts markdown code_block javascript hmal}
 
 get '/' do
   doc = LivingStyleGuide::Document.new do
