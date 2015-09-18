@@ -4,13 +4,69 @@
   height: 113px;
   position: absolute;
   right: -56px;
-  top: 300px;
+  top: 40%;
+  transition: 0.3s ease;
   transform: rotateZ(45deg) rotateX(0deg) rotateY(180deg);
   z-index: 10;
   width: 113px;
 }
 
-#text-button {
+.button span.text-button {
   display: block;
   transform:rotateZ(44deg) rotateX(8deg) rotateY(180deg);
+}
+
+.logo {
+  bottom: 63%;
+  display: block;
+  height: 35%;
+  left: 50%;
+  position: absolute;
+  transform: rotateZ(90deg) rotateX(0deg) rotateY(180deg);
+  z-index: 10;
+  width: 30%;
+}
+
+.rombo-up {
+  bottom: 14%;
+  border: 3px solid #fff;
+  height: 45%;
+  position: relative;
+  left: 20%;
+  transform: rotateZ(0deg) rotateX(0deg) rotateY(180deg);
+  z-index: 10;
+  width: 50%;
+}
+
+.rombo-right {
+  bottom: 59%;
+  border: 3px solid #fff;
+  height: 45%;
+  position: relative;
+  right: 20%;
+  transform: rotateZ(0deg) rotateX(0deg) rotateY(180deg);
+  z-index: 10;
+  width: 50%;
+}
+
+.rombo-down {
+  bottom: 65%;
+  border: 3px solid #fff;
+  height: 45%;
+  right: 20%;
+  position: relative;
+  transform: rotateZ(0deg) rotateX(0deg) rotateY(180deg);
+  z-index: 10;
+  width: 50%;
+}
+
+.rombo-left {
+  bottom: 110%;
+  border: 3px solid #fff;
+  height: 45%;
+  position: relative;
+  left: 20%;
+  transform: rotateZ(0deg) rotateX(0deg) rotateY(180deg);
+  z-index: 10;
+  width: 50%;
 }
