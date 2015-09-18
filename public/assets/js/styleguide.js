@@ -1,7 +1,10 @@
 
 var generateStyleGuide = function(event){
-
   event.preventDefault();
+  ajax();
+}
+
+var ajax = function(){
   var req = new XMLHttpRequest();
   req.open('POST', '/lsg', true);
   req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
@@ -16,7 +19,7 @@ var generateStyleGuide = function(event){
       }
     }
   }
-  req.send("code_lsg=" + encodeURI(document.querySelector('textarea').value));
+  req.send("code_lsg=" + encodeURIComponent(document.querySelector('textarea').value));
 }
 
 var createIframe = function(result){
@@ -38,5 +41,6 @@ var createDivError = function(){
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+  ajax();
   document.getElementById('formArea').addEventListener('submit', generateStyleGuide);
 });
