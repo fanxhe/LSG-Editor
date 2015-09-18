@@ -1,16 +1,15 @@
-
 .code-area {
   background-color: #333333;
   color: #fff;
+  height: 77% !important;
 }
 
 .code-area:focus {
   border-color: #24f4ae;
 }
 
-
 #iframe--container {
-  height: 714px;
+  height: 77%;
 }
 
 #iframe--container iframe:hover {
