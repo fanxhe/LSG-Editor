@@ -11,7 +11,7 @@
   width: 113px;
 }
 
-#text-button {
+.button span.text-button {
   display: block;
   transform:rotateZ(44deg) rotateX(8deg) rotateY(180deg);
 }

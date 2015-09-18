@@ -1,7 +1,10 @@
 .code-area {
   background-color: #333333;
   color: #fff;
-  height: 77% !important;
+}
+
+.form-control.code-area {
+  height: 77%;
 }
 
 .code-area:focus {
