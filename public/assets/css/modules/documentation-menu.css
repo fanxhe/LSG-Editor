@@ -48,3 +48,13 @@ input[id^="documentation-button"]:checked + label + .documentation{
   height: auto;
   opacity: 1;
 }
+
+.anchor {
+  color: #2EF1BD;
+}
+
+
+.nav-tabs>li.active>a.anchor, .nav-tabs>li.active>a.anchor:hover, .nav-tabs>li>a.anchor:focus, .nav-tabs>li>a.anchor:hover {
+  background-color: #2EF1BD;
+  color: #fff;
+}
