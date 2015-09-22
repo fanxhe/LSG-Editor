@@ -4,10 +4,11 @@
   <link rel="stylesheet" type="text/css" href="assets/css/module.css">
   <link rel="stylesheet" type="text/css" href="assets/css/modules/button--generate-style-guide.css">
   <link rel="stylesheet" type="text/css" href="assets/css/modules/header.css">
+  <script type="text/javascript" src= "assets/js/ace/ace.js"></script>
 </head>
 <body>
   <header class= "header">
-        <h1>Living Style Guide Editor</h1>
+    <h1>Living Style Guide Editor</h1>
   </header>
 
   <div class="container-fluid">
@@ -17,7 +18,7 @@
       <div class="col-md-12 ">
         <form id="formArea" method="post" action="/lsg" class="col-md-5 without-padding">
           <div class="form-group col-md-12 without-padding">
-            <textarea name="code_lsg" class="form-control code-area" rows="35"></textarea>
+            <div name="code_lsg" id="editor" class="form-control code-area"></div>
           </div>
 
           <button type="submit" class="center-block button"> <span class= "text-button"> Generate LSG </span>
@@ -35,7 +36,12 @@
 
     </div>
   </div>
-  <script type="text/javascript" src= "assets/js/styleguide.js"/>
+  <script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/twilight");
+    editor.getSession().setMode("ace/mode/markdown");
+  </script>
+  <script type="text/javascript" src= "assets/js/styleguide.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <!--  <script src="assets/js/bootstrap.min.js"></script>-->
 

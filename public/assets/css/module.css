@@ -1,8 +1,6 @@
-.code-area {
-  background-color: #333333;
-  color: #fff;
+#editor{
+  height: 77%;
 }
-
 .form-control.code-area {
   height: 77%;
 }

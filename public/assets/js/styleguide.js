@@ -19,7 +19,7 @@ var ajax = function(){
       }
     }
   }
-  req.send("code_lsg=" + encodeURIComponent(document.querySelector('textarea').value));
+  req.send("code_lsg=" + encodeURIComponent(editor.getValue()));
 }
 
 var createIframe = function(result){
