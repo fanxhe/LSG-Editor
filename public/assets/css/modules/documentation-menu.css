@@ -1,0 +1,50 @@
+.container-button {
+  background-color: #232323;
+  bottom: 0%;
+  position: absolute;
+  width: 100%;
+  z-index: 9;
+}
+
+input[id^="documentation-button"]{
+ display: none;
+}
+
+input[id^="documentation-button"] + label {
+  background: url(../../img/menu-icon.svg)no-repeat;
+  background-size: cover;
+  background-color: #545454;
+  border-radius: 5px;
+  cursor: pointer;
+  float:left;
+  height: 20px;
+  margin: 0 auto 10px 10px;
+  transition: all .6s;
+  width: 20px;
+}
+
+input[id^="documentation-button"]:checked + label {
+  background: url(../../img/menu-icon.svg)no-repeat;
+  background-color: #545454;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}
+
+input[id^="documentation-button"] ~ .documentation {
+  background: #141414;
+  border-radius: 5px;
+  border: 2px solid #545454;
+  color: #fff;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  margin: 10px auto 10px;
+  transition: all .6s;
+  width: 90%;
+}
+
+input[id^="documentation-button"]:checked + label + .documentation{
+  height: auto;
+  opacity: 1;
+}

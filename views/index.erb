@@ -4,6 +4,7 @@
   <link rel="stylesheet" type="text/css" href="assets/css/module.css">
   <link rel="stylesheet" type="text/css" href="assets/css/modules/button--generate-style-guide.css">
   <link rel="stylesheet" type="text/css" href="assets/css/modules/header.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/modules/documentation-menu.css">
   <script type="text/javascript" src= "assets/js/ace/ace.js"></script>
 </head>
 <body>
@@ -13,29 +14,38 @@
 
   <div class="container-fluid">
 
-     <div class="row" >
+     <div class="row without-padding">
 
       <div class="col-md-12 ">
-        <form id="formArea" method="post" action="/lsg" class="col-md-5 without-padding">
-          <div class="form-group col-md-12 without-padding">
-            <div name="code_lsg" id="editor" class="form-control code-area"></div>
+        <div class="col-md-5 without-padding">
+          <form id="formArea" method="post" action="/lsg" >
+            <div class="col-md-12 without-padding">
+              <div name="code_lsg" id="editor" class="code-area"></div>
+            </div>
+
+            <button type="submit" class="center-block button"> <span class= "text-button"> Generate LSG </span>
+              <div class="logo">
+                <div class="rombo-up"></div>
+                <div class="rombo-right"></div>
+                <div class="rombo-down"></div>
+                <div class="rombo-left"></div>
+              </div>
+            </button>
+          </form>
+
+          <div class="container-button">
+            <input type= "checkbox" id="documentation-button"></input>
+            <label for= "documentation-button"></label>
+            <div class= "documentation">hola</div>
           </div>
 
-          <button type="submit" class="center-block button"> <span class= "text-button"> Generate LSG </span>
-            <div class="logo">
-              <div class="rombo-up"></div>
-              <div class="rombo-right"></div>
-              <div class="rombo-down"></div>
-              <div class="rombo-left"></div>
-            </div>
-          </button>
-        </form>
+        </div>
 
         <div id="iframe--container" class="col-md-7 without-padding"></div>
       </div>
-
     </div>
   </div>
+
   <script>
     var editor = ace.edit("editor");
     editor.setTheme("ace/theme/twilight");
