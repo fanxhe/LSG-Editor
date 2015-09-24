@@ -1,16 +1,22 @@
 .container-button {
   background-color: #232323;
   bottom: 0%;
+  height: 30px;
   position: absolute;
   width: 100%;
   z-index: 9;
 }
+.container-button #documentation-button label {
+  left:30px;
+}
 
-input[id^="documentation-button"]{
+input[id^="documentation-button"], input[id^="challenges-button"] {
  display: none;
 }
 
 input[id^="documentation-button"] + label {
+  color: #fff;
+
   background: url(../../img/menu-icon.svg)no-repeat;
   background-size: cover;
   background-color: #545454;
@@ -18,33 +24,59 @@ input[id^="documentation-button"] + label {
   cursor: pointer;
   float:left;
   height: 20px;
+  left: 35px;
   margin: 0 auto 10px 10px;
+  position: absolute;
+  top: 4px;
   transition: all .6s;
   width: 20px;
 }
 
-input[id^="documentation-button"]:checked + label {
+input[id^="challenges-button"] + label{
+  color: #fff;
+
+  background: url(../../img/menu-icon.svg)no-repeat;
+  background-size: cover;
+  background-color: #545454;
+  border-radius: 5px;
+  cursor: pointer;
+  float:left;
+  height: 20px;
+  left: 65px;
+  margin: 0 auto 10px 10px;
+  position: absolute;
+  top: 4px;
+  transition: all .6s;
+  width: 20px;
+}
+
+input[id^="documentation-button"]:checked + label, input[id^="challenges-button"]:checked + label {
   background: url(../../img/menu-icon.svg)no-repeat;
   background-color: #545454;
   cursor: pointer;
   height: 20px;
+  position: absolute;
   width: 20px;
 }
 
-input[id^="documentation-button"] ~ .documentation {
+input[id^="documentation-button"] ~ .documentation, input[id^="challenges-button"] ~ .documentation {
   background: #141414;
   border-radius: 5px;
   border: 2px solid #545454;
+  bottom: 20px;
   color: #fff;
   height: 0;
-  opacity: 0;
-  overflow: hidden;
   margin: 10px auto 10px;
+  max-height: 300px;
+  opacity: 0;
+  overflow-y: scroll;
+  position: absolute;
+  right: 0px;
   transition: all .6s;
-  width: 90%;
+  width: 95%;
 }
 
-input[id^="documentation-button"]:checked + label + .documentation{
+input[id^="documentation-button"]:checked + label + .documentation, input[id^="challenges-button"]:checked + label + .documentation {
   height: auto;
   opacity: 1;
 }

@@ -8,7 +8,7 @@
   <script type="text/javascript" src= "assets/js/ace/ace.js"></script>
 </head>
 <body>
-  <header class= "header">
+  <header class="header">
     <h1>Living Style Guide Editor</h1>
   </header>
 
@@ -33,13 +33,20 @@
             </button>
           </form>
           <div class="container-button">
-            <input type= "checkbox" id="documentation-button"></input>
-            <label for= "documentation-button"></label>
-            <div class= "documentation">
-              <%= erb :documentacion %>
-            </div>
-          </div>
 
+            <input type="checkbox" id="documentation-button"></input>
+            <label for="documentation-button">D</label>
+            <div class="documentation">
+              <%= erb :documentation %>
+            </div>
+
+            <input type="checkbox" id="challenges-button"></input>
+            <label for="challenges-button">C</label>
+            <div class="documentation">
+              <%= erb :challenges %>
+            </div>
+
+          </div>
         </div>
 
         <div id="iframe--container" class="col-md-7 without-padding"></div>
@@ -52,7 +59,7 @@
     editor.setTheme("ace/theme/twilight");
     editor.getSession().setMode("ace/mode/markdown");
   </script>
-  <script type="text/javascript" src= "assets/js/styleguide.js"></script>
+  <script type="text/javascript" src="assets/js/styleguide.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
 
