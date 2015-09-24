@@ -12,30 +12,31 @@ input[class^="help-toggle"] {
 }
 
 input[class^="help-toggle"] + label {
-  color: #fff;
-
-  background: url(../../img/menu-icon.svg)no-repeat;
   background-size: cover;
-  background-color: #545454;
   border-radius: 5px;
+  color:#fff;
   cursor: pointer;
   float:left;
+  font-size: 18px;
   height: 20px;
-  left: 35px;
   margin: 0 auto 10px 10px;
   position: absolute;
   top: 4px;
   transition: all .6s;
   width: 20px;
 }
-input[id^="challenges-button"] + label {
+
+.help-challenges {
   left: 65px;
 }
 
+.help-documentation {
+  left: 35px;
+}
 
 input[class^="help-toggle"]:checked + label {
-  background: url(../../img/menu-icon.svg)no-repeat;
   background-color: #545454;
+  color:#faff8c;
   cursor: pointer;
   height: 20px;
   position: absolute;
