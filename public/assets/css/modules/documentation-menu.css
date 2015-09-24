@@ -6,15 +6,12 @@
   width: 100%;
   z-index: 9;
 }
-.container-button #documentation-button label {
-  left:30px;
-}
 
-input[id^="documentation-button"], input[id^="challenges-button"] {
+input[class^="help-toggle"] {
  display: none;
 }
 
-input[id^="documentation-button"] + label {
+input[class^="help-toggle"] + label {
   color: #fff;
 
   background: url(../../img/menu-icon.svg)no-repeat;
@@ -31,26 +28,12 @@ input[id^="documentation-button"] + label {
   transition: all .6s;
   width: 20px;
 }
-
-input[id^="challenges-button"] + label{
-  color: #fff;
-
-  background: url(../../img/menu-icon.svg)no-repeat;
-  background-size: cover;
-  background-color: #545454;
-  border-radius: 5px;
-  cursor: pointer;
-  float:left;
-  height: 20px;
+input[id^="challenges-button"] + label {
   left: 65px;
-  margin: 0 auto 10px 10px;
-  position: absolute;
-  top: 4px;
-  transition: all .6s;
-  width: 20px;
 }
 
-input[id^="documentation-button"]:checked + label, input[id^="challenges-button"]:checked + label {
+
+input[class^="help-toggle"]:checked + label {
   background: url(../../img/menu-icon.svg)no-repeat;
   background-color: #545454;
   cursor: pointer;
@@ -59,7 +42,7 @@ input[id^="documentation-button"]:checked + label, input[id^="challenges-button"
   width: 20px;
 }
 
-input[id^="documentation-button"] ~ .documentation, input[id^="challenges-button"] ~ .documentation {
+input[class^="help-toggle"] ~ .documentation {
   background: #141414;
   border-radius: 5px;
   border: 2px solid #545454;
@@ -76,7 +59,7 @@ input[id^="documentation-button"] ~ .documentation, input[id^="challenges-button
   width: 95%;
 }
 
-input[id^="documentation-button"]:checked + label + .documentation, input[id^="challenges-button"]:checked + label + .documentation {
+input[class^="help-toggle"]:checked + label + .documentation {
   height: auto;
   opacity: 1;
 }
