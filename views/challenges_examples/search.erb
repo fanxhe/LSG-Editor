@@ -1,0 +1,52 @@
+<h5>Search</h5>
+<p>
+  Now that you already tried a few examples you may want to add a search bar to filter your examples:
+<pre><code>
+  @search-box
+</pre></code>
+ You could even change the default placeholder:
+ <pre><code>
+   @search-box placeholder: buscar...
+ </pre></code>
+</p>
+<div class="challenges">
+<script src="http://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
+<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+# Colors
+
+@colors:
+- -       -       -
+- - #cc2301 #b1ff91 #a3ae9e
+- - #991a00 #7bcb5a #465141
+
+# font
+
+@font-example 20px Indie Flower:
+	My example font
+
+# html
+
+```
+<div class="block">
+  <h1 class="title">Extract content</h1>
+  <p> This is a content inside of a code block</p>
+</div>
+```
+
+# javascript
+
+```plain
+<button>If you click on me, I will disappear.</button>
+
+
+<button>If you click on me, I will disappear.</button>
+```
+```javascript
+@javascript
+$(document).ready(function(){
+    $("button").click(function(){
+        $(this).hide();
+    });
+});
+```
+</div>

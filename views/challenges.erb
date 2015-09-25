@@ -1,26 +1,16 @@
 <div id="content">
   <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
-    <li class="active"><a class="anchor" href="#c-colors" data-toggle="tab">Colors</a></li>
-    <li><a class="anchor" href="#c-font" data-toggle="tab">FONT</a></li>
-    <li><a class="anchor" href="#c-html" data-toggle="tab">HTML</a></li>
-    <li><a class="anchor" href="#c-javascript" data-toggle="tab">Javascript</a></li>
-    <li><a class="anchor" href="#c-filter" data-toggle="tab">Other Filter</a></li>
+    <li class="active"><a class="anchor" href="#c-colors" data-toggle="tab">.</a></li>
+    <li><a class="anchor" href="#c-font" data-toggle="tab">.</a></li>
+    <li><a class="anchor" href="#c-html-plain" data-toggle="tab">.</a></li>
+    <li><a class="anchor" href="#c-javascript" data-toggle="tab">.</a></li>
+    <li><a class="anchor" href="#c-search" data-toggle="tab">.</a></li>
   </ul>
   <div id="my-tab-content" class="tab-content">
-    <div class="tab-pane active" id="c-colors">
-        <h5>Colors</h5>
-    </div>
-    <div class="tab-pane" id="c-font">
-        <h5>FONT</h5>
-    </div>
-    <div class="tab-pane" id="c-html">
-        <h5>HTML</h5>
-    </div>
-    <div class="tab-pane" id="c-javascript">
-        <h5>Javascript</h5>
-    </div>
-    <div class="tab-pane" id="c-filter">
-        <h5>Other Filters</h5>
-    </div>
+    <div class="tab-pane active" id="c-colors"><%= erb :colors, views: 'views/challenges_examples' %></div>
+    <div class="tab-pane" id="c-font"><%= erb :font, views: 'views/challenges_examples' %></div>
+    <div class="tab-pane" id="c-html-plain"><%= erb :html, views: 'views/challenges_examples' %></div>
+    <div class="tab-pane" id="c-javascript"><%= erb :javascript, views: 'views/challenges_examples' %></div>
+    <div class="tab-pane" id="c-search"><%= erb :search, views: 'views/challenges_examples' %></div>
   </div>
 </div>
