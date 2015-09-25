@@ -4,23 +4,209 @@
     <li><a class="anchor" href="#font" data-toggle="tab">FONT</a></li>
     <li><a class="anchor" href="#html" data-toggle="tab">HTML</a></li>
     <li><a class="anchor" href="#javascript" data-toggle="tab">Javascript</a></li>
+    <li><a class="anchor" href="#css" data-toggle="tab">Css</a></li>
     <li><a class="anchor" href="#filter" data-toggle="tab">Other Filter</a></li>
   </ul>
   <div id="my-tab-content" class="tab-content">
     <div class="tab-pane active" id="colors">
         <h5>Colors</h5>
+        <p>If you want to add colors swatches in your style guide, you just to use the @colors filter and specify your colors as the following:</p>
+        <pre><code>
+@colors:
+-          -       -           #fff
+-          -       #ff006a - #e7eee4
+-          -        #cc2301 #b1ff91 #a3ae9e
+-          -        #991a00 #7bcb5a #465141
+-          -            -                 -       #24301f
+       </code></pre>
+       <p>
+         What kind of colors can you include?
+         You can include hexadecimal colors
+         Name of browser predefined colors.
+         If you want to include an empty space you should
+         to add a dash (-) in the place where you wish this empty space.
+       </p>
     </div>
     <div class="tab-pane" id="font">
         <h5>FONT</h5>
+        <p>You can include this kind of examples using the @font-example filter followed by properties for the fonts:</p>
+        <pre><code>
+@font-example 12px Arial
+        </code></pre>
+        <p>
+          his way, the font example will be appear, with the font family and the given size, a series of characters 
+          from A to Z(a-z),  digits from 0 to 9 and some special characters.<br>
+          Also, you can include a specific text with the selected font adding it below:
+        </p>
+        <pre><code>
+@font-example 12px Arial
+My example
+        </code></pre>
+        <p>
+          Do you use fonts available from Internet? You can do use them including the corresponding font’s link.
+        </p>
+        <pre><code>
+<%= CGI.escapeHTML "<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>"%>
+        </code></pre>
+
     </div>
     <div class="tab-pane" id="html">
         <h5>HTML</h5>
+        <p>
+          If you want to include an HTML code block, there are several ways to do this:
+        </p>
+        <pre><code>
+```
+<%= CGI.escapeHTML '<div class=“lsg”> DIV </div>' %>
+```
+        </code></pre>
+        <p>
+        Will display the code and the result of it.
+        </p>
+        <pre><code>
+          
+<%= CGI.escapeHTML '<div class=“lsg”> DIV </div>' %>
+
+        </code></pre>
+        <p>
+        Will only show the result
+        </p>
+        <pre><code>
+```html
+<%= CGI.escapeHTML '<div class=“lsg”> DIV </div>' %>
+```
+        </code></pre>
+        <p>
+        his way will display as a code without the resultblock
+        </P>
+        <pre><code>
+```
+@haml
+%strong{:class => “lsg”} Living Style Guide Editor!
+```
+        </code></pre>
     </div>
+    
     <div class="tab-pane" id="javascript">
         <h5>Javascript</h5>
+        <p>
+        To add JavaScript examples in the Living Style Guide you must use:
+        </p>
+        <pre><code>
+```
+@javascript
+$('.button').click(function() {
+  alert('Hello World!');
+});
+```
+        </code></pre>
+        <p>
+          This code will be executed it in the generated style guide.
+          To include JQuery you just need to add the script from an internet address:
+        </p>
+        <pre><code>
+<%= CGI.escapeHTML '<script src=”http://code.jquery.com/jquery-2.1.4.min.js” type=”text/javascript”/>' %>
+        </code></pre>
+        <p>
+          If you wish to add coffee-script  examples you will must specify it, as the following:
+        </p>
+        <pre><code>
+```
+@coffee-script
+$('.button').click ->
+  alert 'Hello World!'
+```
+        </code></pre>
+    </div>
+    <div class="tab-pane" id="css">
+      <h5>Css</h5>
+      <p>
+        To add CSS  to your examples, you just need to use the @css filter  as the following:
+      </p>
+      <pre><code>
+```    
+<%= CGI.escapeHTML'<div class= “lsg”>'%>
+<%= CGI.escapeHTML'<h1>Living Style Guide Editor</h1>'%>
+<%= CGI.escapeHTML'</div>'%>
+
+```
+
+@css:
+
+h1 {
+ color:pink;
+}
+      </code></pre>
+      <p>
+        You can improve your style guide with CSS changing the properties of the generated 
+        classes by the Living Style Guide Gem and adding the desired CSS , for example, 
+        if you wish to change the color of the code blocks, you should to do the following:
+      </p>
+      <pre><code>
+```    
+<%= CGI.escapeHTML'<div class= “lsg”>'%>
+<%= CGI.escapeHTML'<h1>Living Style Guide Editor</h1>'%>
+<%= CGI.escapeHTML'</div>'%>
+
+```
+
+@css:
+
+h1 {
+ color:pink;
+}
+.lsg--button {
+ background-color: #eafdf8;
+ background-size: 60%;
+ border-radius: 50%;
+ border: 0;
+ fill: white;
+}
+.lsg--code-block {
+ background:#2EF1BD;
+}
+      </code></pre>
+      <p>
+      If you prefer using SCSS or SASS to do the styling, you just use the corresponding filter @scss or @sass.
+      </p>
+      <p>
+      Is an error occurring?</br>
+      -It is important that you review the indentation of your styling code.
+      </p>
+      <p>
+      Some of your CSS selectors do not work?</br>
+      -Review, and make sure that there aren't blank lines between them.  
+      </p>
     </div>
     <div class="tab-pane" id="filter">
         <h5>Other Filters</h5>
+        <h6>Search</h6>
+        <p>
+          It is possible to include a search box to hide all your examples that are unrelated to your search term
+          adding this filter, it will be placeds in the top with a default placeholder “Search…”
+        </p>
+        <pre><code>
+@search-box
+        </code></pre>
+        <p>
+          Would you like to change the placeholder or the position of the search-box?</br>
+          Both options are possibles. If you want to change the position, you will do it including using CSS
+          However, if you want to change the placeholder you will only need to pass the following argument However, 
+          if you want to change the placeholder you will only need to pass the following argument
+       </p>
+       <pre><code>
+@search-box placeholder: texto personalizado
+       </code></pre>
+        <h6>Footer</h6>
+        <p>
+          If you wish to customize a footer you should follow the same process as you do to customize the header.
+        </p>
+        <pre><code>
+@footer: 
+<%= CGI.escapeHTML'<div class= “footer”>'%>
+<%= CGI.escapeHTML '<h1>This is my footer</h1>'%>
+<%= CGI.escapeHTML'</div>'%>
+        </code></pre>    
     </div>
   </div>
 </div>
