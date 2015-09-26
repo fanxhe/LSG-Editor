@@ -1,0 +1,35 @@
+<h5>Other Filters</h5>
+<h6>Search</h6>
+<p>
+  It is possible to include a search box to hide all your examples that are unrelated to your search term
+  adding this filter, it will be placed in the top with a default placeholder “Search…”
+</p>
+<pre><code>@search-box</code></pre>
+<p>
+  Would you like to change the placeholder or the position of the search-box?<br>
+  Both options are possibles. If you want to change the position, you will do it including using CSS
+  However, if you want to change the placeholder you will only need to pass the following argument However, 
+  if you want to change the placeholder you will only need to pass the following argument
+</p>
+<pre><code>@search-box placeholder: texto personalizado</code></pre>
+
+<h6>Header</h6>
+<p>
+  Would you like to add and customize the header of your style guide?<br>
+  It is very simple, you just need to use this filter and you can to add CSS to change it’s properties or add the style that you prefer.
+</p>
+<pre><code>@header:
+  <%= CGI.escapeHTML '<div class= “lsg”>' %>
+    <%= CGI.escapeHTML '<h1>Mi Guía de Estilo Personalizada</h1>' %>
+  <%= CGI.escapeHTML '</div>'%>
+</code></pre>
+        
+<h6>Footer</h6>
+<p>
+  If you wish to customize a footer you should follow the same process as you do to customize the header.
+</p>
+<pre><code>@footer: 
+  <%= CGI.escapeHTML'<div class= “footer”>'%>
+    <%= CGI.escapeHTML '<h1>This is my footer</h1>'%>
+  <%= CGI.escapeHTML'</div>'%>
+</code></pre>    

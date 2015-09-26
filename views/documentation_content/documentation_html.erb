@@ -1,0 +1,36 @@
+<h5>HTML</h5>
+<p>
+  If you want to include an HTML code block, there are several ways to do this:
+</p>
+<pre><code>```
+<%= CGI.escapeHTML '<div class=“lsg”> DIV </div>' %>
+
+```</code></pre>
+<p>
+Will display the code and the result of it.
+</p>
+<pre><code><%= CGI.escapeHTML '<div class=“lsg”> DIV </div>' %></code></pre>
+<p>
+Will only show the result
+</p>
+<pre><code>```html
+<%= CGI.escapeHTML '<div class=“lsg”> DIV </div>' %>
+
+```</code></pre>
+<p>
+This way will display as a code without the result block
+</P>
+<pre><code>```plain
+<%= CGI.escapeHTML '<div class=“lsg”> DIV </div>' %>
+
+```</code></pre>
+<p>
+This will only show the result inside a code block.<br>
+
+Do you want use Haml in your style guide? You can also, do it.
+<pre><code>```
+@haml
+%strong{:class => “lsg”} Living Style Guide Editor!
+```
+</code></pre>
+</p>
