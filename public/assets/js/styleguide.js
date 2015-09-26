@@ -40,7 +40,24 @@ var createDivError = function(){
   document.getElementById('iframe--container').appendChild(divSmsError);
 }
 
+var getChallenges = function(event){
+  var id = this.href.substring(this.href.lastIndexOf('#'));
+  var challengeContent = document.querySelector(id + ' .challenges').innerHTML;
+  setChallenges(challengeContent);
+}
+
+var setChallenges = function(content){
+  debugger
+  editor.setValue(content);
+  ajax();
+}
+
 document.addEventListener('DOMContentLoaded', function() {
   ajax();
   document.getElementById('formArea').addEventListener('submit', generateStyleGuide);
+  var all = document.querySelectorAll('.challenges_examples .anchor');
+  for ( var i = 0; i < all.length; i++) {
+    all[i].addEventListener('click', getChallenges);
+  }
+
 });

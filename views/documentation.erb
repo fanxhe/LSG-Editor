@@ -1,0 +1,18 @@
+<div id="content">
+  <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+    <li class="active"><a class="anchor" href="#colors" data-toggle="tab">Colors</a></li>
+    <li><a class="anchor" href="#font" data-toggle="tab">Fonts</a></li>
+    <li><a class="anchor" href="#html" data-toggle="tab">HTML</a></li>
+    <li><a class="anchor" href="#javascript" data-toggle="tab">Javascript</a></li>
+    <li><a class="anchor" href="#css" data-toggle="tab">CSS</a></li>
+    <li><a class="anchor" href="#filter" data-toggle="tab">Other Filters</a></li>
+  </ul>
+  <div id="my-tab-content" class="tab-content">
+    <div class="tab-pane active" id="colors"><%= erb :documentation_colors, views: 'views/documentation_content'%></div>
+    <div class="tab-pane" id="font"><%= erb :documentation_font, views: 'views/documentation_content'%></div>
+    <div class="tab-pane" id="html"><%= erb :documentation_html, views: 'views/documentation_content'%></div>
+    <div class="tab-pane" id="javascript"><%= erb :documentation_javascript, views: 'views/documentation_content'%></div>
+    <div class="tab-pane" id="css"><%= erb :documentation_css, views: 'views/documentation_content'%></div>
+    <div class="tab-pane" id="filter"><%= erb :documentation_filters, views: 'views/documentation_content'%></div>
+  </div>
+</div>

@@ -1,0 +1,54 @@
+<h5>CSS</h5>
+<p>
+  To add CSS  to your examples, you just need to use the @css filter  as the following:
+</p>
+<pre><code>```    
+<%= CGI.escapeHTML'<div class= “lsg”>'%>
+<%= CGI.escapeHTML'<h1>Living Style Guide Editor</h1>'%>
+<%= CGI.escapeHTML'</div>'%>
+
+```
+
+@css:
+  h1 {
+    color:pink;
+  }
+</code></pre>
+<p>
+  You can improve your style guide with CSS changing the properties of the generated 
+  classes by the Living Style Guide Gem and adding the desired CSS , for example, 
+  if you wish to change the color of the code blocks, you should to do the following:
+</p>
+<pre><code>```    
+<%= CGI.escapeHTML'<div class= “lsg”>'%>
+<%= CGI.escapeHTML'<h1>Living Style Guide Editor</h1>'%>
+<%= CGI.escapeHTML'</div>'%>
+
+```
+
+@css:
+  h1 {
+    color:pink;
+  }
+  .lsg--button {
+    background-color: #eafdf8;
+    background-size: 60%;
+    border-radius: 50%;
+    border: 0;
+    fill: white;
+  }
+  .lsg--code-block {
+    background:#2EF1BD;
+  }
+</code></pre>
+<p>
+If you prefer using SCSS or SASS to do the styling, you just use the corresponding filter @scss or @sass.
+</p>
+<p>
+Is an error occurring?<br>
+-It is important that you review the indentation of your styling code.
+</p>
+<p>
+Some of your CSS selectors do not work?<br>
+-Review, and make sure that there aren't blank lines between them.  
+</p>

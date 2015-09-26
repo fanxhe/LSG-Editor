@@ -1,0 +1,26 @@
+<h5>Javascript</h5>
+<p>
+To add Javascript examples in the Living Style Guide you must use:
+</p>
+<pre><code>```
+@javascript
+$('.button').click(function() {
+alert('Hello World!');
+});
+```
+</code></pre>
+<p>
+  This code will be executed it in the generated style guide.
+  To include JQuery you just need to add the script from an internet address:
+</p>
+<pre><code><%= CGI.escapeHTML '<script src=”http://code.jquery.com/jquery-2.1.4.min.js” type=”text/javascript”/>' %>
+</code></pre>
+<p>
+  If you wish to add coffee-script  examples you will must specify it, as the following:
+</p>
+<pre><code>```
+@coffee-script
+$('.button').click ->
+alert 'Hello World!'
+```
+</code></pre>

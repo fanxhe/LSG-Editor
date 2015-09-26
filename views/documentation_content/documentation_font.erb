@@ -1,0 +1,17 @@
+<h5>Fonts</h5>
+<p>You can include this kind of examples using the @font-example filter followed by properties for the fonts:</p>
+<pre><code>@font-example 12px Arial
+</code></pre>
+<p>
+  This way, the font example will be appear, with the font family and the given size, a series of characters 
+  from A to Z(a-z),  digits from 0 to 9 and some special characters.<br>
+  Also, you can include a specific text with the selected font adding it below:
+</p>
+<pre><code>@font-example 12px Arial
+My example
+</code></pre>
+<p>
+  Do you use fonts available from Internet? You can do use them including the corresponding font’s link.
+</p>
+<pre><code><%= CGI.escapeHTML "<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>"%>
+</code></pre>
