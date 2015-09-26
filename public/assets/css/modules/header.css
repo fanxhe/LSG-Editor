@@ -1,11 +1,290 @@
 .header{
-  background-color: #F8AAC1;
-  height: 15%;
+  height: 16%;
   margin-bottom: 2%;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+
+.diamond-container {
+  background-color: #FFE7EE;
+  height: 100%;
+  position: absolute;
+  width: 100%
 }
 
 .header h1 {
+  bottom: 2%;
   color: #fff;
-  margin: 0;
+  font-size: 30px;
+  left: 38%;
+  position: absolute;
   text-align: center;
+  z-index: 1;
+  width: 332px;
+}
+
+.complete {
+  border: 50px solid transparent;
+  height: 0;
+  position: relative;
+  width: 0;
+}
+
+.complete:after {
+  border: 50px solid transparent;
+  content: '';
+  height: 0;
+  left: -50px;
+  position: absolute;
+  top: 20px;
+  width: 0;
+}
+
+.turned-around {
+  transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+}
+
+.diamond1 {
+  border-bottom: 20px solid #FF96B5;
+  top: -50px;
+}
+
+.diamond1:after {
+  border-top: 70px solid #FF96B5;
+}
+
+.diamond2 {
+  border-bottom: 20px solid #F4A7BE;
+  top: 20px;
+  left: 50px;
+}
+
+.diamond2:after {
+  border-top: 70px solid #F4A7BE;
+}
+
+.diamond3 {
+  border-bottom: 20px solid #EB83A2;
+  top: -190px;
+  left: 100px;
+}
+
+.diamond3:after {
+  border-top: 70px solid #EB83A2;
+}
+
+.diamond4 {
+  border-bottom: 20px solid #ECA2B8;
+  bottom: 120px;
+  left: 150px;
+}
+.diamond4:after {
+  border-top: 70px solid #ECA2B8;
+}
+
+.diamond5 {
+  border-bottom: 20px solid #EF6991;
+  bottom: 330px;
+  left: 200px;
+}
+
+.diamond5:after {
+  border-top: 70px solid #EF6991;
+}
+
+.diamond6 {
+  border-bottom: 20px solid #F8AAC1;
+  bottom: 260px;
+  left: 250px;
+}
+.diamond6:after {
+  border-top: 70px solid #F8AAC1;
+}
+
+.diamond7 {
+  border-bottom: 20px solid #F199B2;
+  bottom: 470px;
+  left: 300px;
+}
+
+.diamond7:after {
+  border-top: 70px solid #F199B2;
+}
+
+.diamond8 {
+  border-bottom: 20px solid #E293AA;
+  bottom: 400px;
+  left: 350px;
+}
+.diamond8:after {
+  border-top: 70px solid #E293AA;
+}
+.diamond9 {
+  border-bottom: 20px solid #EE97B0;
+  bottom: 610px;
+  left: 400px;
+}
+
+.diamond9:after {
+  border-top: 70px solid #EE97B0;
+}
+
+.diamond10 {
+  border-bottom: 20px solid #E83573;
+  bottom: 540px;
+  left: 450px;
+}
+
+.diamond10:after {
+  border-top: 70px solid #E83573;
+}
+
+.diamond11 {
+  border-bottom: 20px solid #D0156E;
+  bottom: 750px;
+  left: 500px;
+}
+
+.diamond11:after {
+  border-top: 70px solid #D0156E;
+}
+
+.diamond12 {
+  border-bottom: 20px solid #D0156E;
+  bottom: 680px;
+  left: 550px;
+}
+
+.diamond12:after {
+  border-top: 70px solid #D0156E;
+}
+.diamond13 {
+  border-bottom: 20px solid #D0156E;
+  bottom: 890px;
+  left: 600px;
+}
+
+.diamond13:after {
+  border-top: 70px solid #D0156E;
+}
+.diamond14  {
+  border-bottom: 20px solid #D0156E;
+  bottom: 820px;
+  left: 650px;
+}
+
+.diamond14:after {
+  border-top: 70px solid #D0156E;
+}
+.diamond15 {
+  border-bottom: 20px solid #D0156E;
+  bottom: 1030px;
+  left: 700px;
+}
+
+.diamond15:after {
+  border-top: 70px solid #D0156E;
+}
+
+.diamond16 {
+  border-bottom: 20px solid #E83573;
+  bottom: 960px;
+  left: 750px;
+}
+
+.diamond16:after {
+  border-top: 70px solid #E83573;
+}
+
+.diamond17 {
+  border-bottom: 20px solid #EE97B0;
+  bottom: 1170px;
+  left: 800px;
+}
+
+.diamond17:after {
+  border-top: 70px solid #EE97B0;
+}
+
+.diamond18 {
+  border-bottom: 20px solid #E293AA;
+  bottom: 1100px;
+  left: 850px;
+}
+
+.diamond18:after {
+  border-top: 70px solid #E293AA;
+}
+
+.diamond19 {
+  border-bottom: 20px solid #F199B2;
+  bottom: 1310px;
+  left: 900px;
+}
+
+.diamond19:after {
+  border-top: 70px solid #F199B2;
+}
+
+.diamond20 {
+  border-bottom: 20px solid #F8AAC1;
+  bottom: 1240px;
+  left: 950px;
+}
+
+.diamond20:after {
+  border-top: 70px solid #F8AAC1;
+}
+
+.diamond21 {
+  border-bottom: 20px solid #EF6991;
+  bottom: 1450px;
+  left: 1000px;
+}
+
+.diamond21:after {
+  border-top: 70px solid #EF6991;
+}
+
+.diamond22 {
+  border-bottom: 20px solid #ECA2B8;
+  bottom: 1380px;
+  left: 1050px;
+}
+
+.diamond22:after {
+  border-top: 70px solid #ECA2B8;
+}
+
+.diamond23 {
+  border-bottom: 20px solid #EB83A2;
+  bottom: 1590px;
+  left: 1100px;
+}
+
+.diamond23:after {
+  border-top: 70px solid #EB83A2;
+}
+
+.diamond24 {
+  border-bottom: 20px solid #F4A7BE;
+  bottom: 1520px;
+  left: 1150px;
+}
+
+.diamond24:after {
+  border-top: 70px solid #F4A7BE;
+}
+
+.diamond25 {
+  border-bottom: 20px solid #FF96B5;
+  bottom: 1730px;
+  left: 1200px;
+}
+
+.diamond25:after {
+  border-top: 70px solid #FF96B5;
 }

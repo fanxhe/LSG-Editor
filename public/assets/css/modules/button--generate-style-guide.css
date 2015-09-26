@@ -5,8 +5,11 @@
   position: absolute;
   right: -56px;
   top: 40%;
-  transition: 0.3s ease;
+  transition: 0.7s ease;
+  -webkit-transition: 0.5s ease;
   transform: rotateZ(45deg) rotateX(0deg) rotateY(180deg);
+  -ms-transform:  rotateZ(45deg) rotateX(0deg) rotateY(180deg);
+  -webkit-transform: rotateZ(45deg) rotateX(0deg) rotateY(180deg);
   z-index: 10;
   width: 113px;
 }
@@ -14,59 +17,79 @@
 .button span.text-button {
   display: block;
   transform:rotateZ(44deg) rotateX(8deg) rotateY(180deg);
+  position: relative;
+  transform: rotateZ(44deg) rotateX(8deg) rotateY(180deg);
+  -ms-transform: rotateZ(44deg) rotateX(8deg) rotateY(180deg);
+  -webkit-transform: rotateZ(44deg) rotateX(8deg) rotateY(180deg);
+  z-index: 9999;
+}
+
+button.button:focus {
+  outline-color: #FFE7EE;
 }
 
 .logo {
+  border-color: #e83573;
   bottom: 63%;
   display: block;
   height: 35%;
   left: 50%;
   position: absolute;
   transform: rotateZ(90deg) rotateX(0deg) rotateY(180deg);
+  -ms-transform: rotateZ(90deg) rotateX(0deg) rotateY(180deg);
+  -webkit-transform: rotateZ(90deg) rotateX(0deg) rotateY(180deg);
   z-index: 10;
   width: 30%;
 }
 
 .rombo-up {
-  bottom: 14%;
-  border: 3px solid #fff;
-  height: 45%;
+  border: 3px solid #e83573;
+  height: 75%;
   position: relative;
-  left: 20%;
+  right: 50%;
+  top: 28%;
   transform: rotateZ(0deg) rotateX(0deg) rotateY(180deg);
-  z-index: 10;
-  width: 50%;
+  -ms-transform: rotateZ(0deg) rotateX(0deg) rotateY(180deg);
+  -webkit-transform: rotateZ(0deg) rotateX(0deg) rotateY(180deg);
+  z-index: -1;
+  width: 80%;
 }
 
 .rombo-right {
-  bottom: 59%;
-  border: 3px solid #fff;
-  height: 45%;
+  bottom: 47%;
+  border: 3px solid #e83573;
+  height: 75%;
   position: relative;
-  right: 20%;
+  right: 120%;
   transform: rotateZ(0deg) rotateX(0deg) rotateY(180deg);
-  z-index: 10;
-  width: 50%;
+  -ms-transform: rotateZ(0deg) rotateX(0deg) rotateY(180deg);
+  -webkit-transform: rotateZ(0deg) rotateX(0deg) rotateY(180deg);
+  z-index: -1;
+  width: 80%;
 }
 
 .rombo-down {
-  bottom: 65%;
-  border: 3px solid #fff;
-  height: 45%;
-  right: 20%;
+  bottom: 59%;
+  border: 3px solid #e83573;
+  height: 75%;
+  right: 120%;
   position: relative;
   transform: rotateZ(0deg) rotateX(0deg) rotateY(180deg);
-  z-index: 10;
-  width: 50%;
+  -ms-transform: rotateZ(0deg) rotateX(0deg) rotateY(180deg);
+  -webkit-transform: rotateZ(0deg) rotateX(0deg) rotateY(180deg);
+  z-index: -1;
+  width: 80%;
 }
 
 .rombo-left {
-  bottom: 110%;
-  border: 3px solid #fff;
-  height: 45%;
+  bottom: 134%;
+  border: 3px solid #e83573;
+  height: 75%;
   position: relative;
-  left: 20%;
+  right: 50%;
   transform: rotateZ(0deg) rotateX(0deg) rotateY(180deg);
-  z-index: 10;
-  width: 50%;
+  -ms-transform: rotateZ(0deg) rotateX(0deg) rotateY(180deg);
+  -webkit-transform: rotateZ(0deg) rotateX(0deg) rotateY(180deg);
+  z-index: -1;
+  width: 80%;
 }
