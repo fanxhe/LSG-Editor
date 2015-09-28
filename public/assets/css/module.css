@@ -14,10 +14,6 @@
   height: 77%;
 }
 
-#iframe--container iframe:hover {
-  border: 1px solid #24f4ae;
-}
-
 .lsg--result {
   height: 100%;
   width: 100%;

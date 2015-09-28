@@ -47,7 +47,6 @@ var getChallenges = function(event){
 }
 
 var setChallenges = function(content){
-  debugger
   editor.setValue(content);
   ajax();
 }
