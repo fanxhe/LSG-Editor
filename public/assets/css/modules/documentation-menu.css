@@ -1,5 +1,5 @@
 .container-button {
-  background-color: #232323;
+  background-color: #232323 ;
   bottom: 0%;
   height: 30px;
   position: absolute;
@@ -8,7 +8,7 @@
 }
 
 input[class^="help-toggle"] {
- display: none;
+  display: none;
 }
 
 input[class^="help-toggle"] + label {
@@ -24,10 +24,6 @@ input[class^="help-toggle"] + label {
   top: 4px;
   transition: all .6s;
   width: 20px;
-}
-
-.help-challenges {
-  left: 65px;
 }
 
 .help-documentation {
@@ -60,7 +56,7 @@ input[class^="help-toggle"] ~ .documentation {
   width: 95%;
 }
 
-input[class^="help-toggle"]:checked + label + .documentation {
+input[class^="help-toggle"]:checked + label + .doc {
   height: auto;
   opacity: 1;
 }
@@ -68,7 +64,6 @@ input[class^="help-toggle"]:checked + label + .documentation {
 .anchor {
   color: #2EF1BD;
 }
-
 
 .nav-tabs>li.active>a.anchor, .nav-tabs>li.active>a.anchor:hover, .nav-tabs>li>a.anchor:focus, .nav-tabs>li>a.anchor:hover {
   background-color: #2EF1BD;

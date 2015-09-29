@@ -59,4 +59,17 @@ document.addEventListener('DOMContentLoaded', function() {
     all[i].addEventListener('click', getChallenges);
   }
 
+  var showDoc = document.getElementById('documentation-button'),
+  showChallenge = document.getElementById('challenge-button');
+
+  showDoc.addEventListener('change', function() {
+    if(this.checked)
+      showChallenge.checked = false;
+  });
+
+  showChallenge.addEventListener('change', function() {
+    if(this.checked)
+      showDoc.checked = false;
+  });
+
 });

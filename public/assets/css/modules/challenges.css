@@ -1,4 +1,8 @@
+.help-challenges {
+  left: 65px;
+}
 
-.challenges {
-  display:none;
+input[class^="help-toggle"]:checked + label + .challenges_examples {
+  height: auto;
+  opacity: 1;
 }
