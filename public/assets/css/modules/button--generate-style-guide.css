@@ -41,13 +41,10 @@ button.button:focus {
   z-index: 10;
   width: 30%;
 }
-
-.rombo-up {
+.rombo-rotate {
   border: 3px solid #e83573;
   height: 75%;
   position: relative;
-  right: 50%;
-  top: 28%;
   transform: rotateZ(0deg) rotateX(0deg) rotateY(180deg);
   -ms-transform: rotateZ(0deg) rotateX(0deg) rotateY(180deg);
   -webkit-transform: rotateZ(0deg) rotateX(0deg) rotateY(180deg);
@@ -55,41 +52,22 @@ button.button:focus {
   width: 80%;
 }
 
-.rombo-right {
-  bottom: 47%;
-  border: 3px solid #e83573;
-  height: 75%;
-  position: relative;
-  right: 120%;
-  transform: rotateZ(0deg) rotateX(0deg) rotateY(180deg);
-  -ms-transform: rotateZ(0deg) rotateX(0deg) rotateY(180deg);
-  -webkit-transform: rotateZ(0deg) rotateX(0deg) rotateY(180deg);
-  z-index: -1;
-  width: 80%;
+.rombo-up {
+  right: 50%;
+  top: 28%;
+}
+
+.rombo-right{
+  bottom: 134%;
+  right: 50%;
 }
 
 .rombo-down {
   bottom: 59%;
-  border: 3px solid #e83573;
-  height: 75%;
   right: 120%;
-  position: relative;
-  transform: rotateZ(0deg) rotateX(0deg) rotateY(180deg);
-  -ms-transform: rotateZ(0deg) rotateX(0deg) rotateY(180deg);
-  -webkit-transform: rotateZ(0deg) rotateX(0deg) rotateY(180deg);
-  z-index: -1;
-  width: 80%;
 }
 
 .rombo-left {
-  bottom: 134%;
-  border: 3px solid #e83573;
-  height: 75%;
-  position: relative;
-  right: 50%;
-  transform: rotateZ(0deg) rotateX(0deg) rotateY(180deg);
-  -ms-transform: rotateZ(0deg) rotateX(0deg) rotateY(180deg);
-  -webkit-transform: rotateZ(0deg) rotateX(0deg) rotateY(180deg);
-  z-index: -1;
-  width: 80%;
+  bottom: 47%;
+  right: 120%;
 }
