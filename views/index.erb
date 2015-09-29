@@ -35,23 +35,22 @@
               </div>
             </button>
           </form>
-          <div class="container-button">
 
+          <div class="container-button">
             <input type="checkbox" class="help-toggle" id="documentation-button"></input>
             <label class='help-documentation' for="documentation-button"><i class="fa fa-book"></i></label>
-            <div class="documentation">
+            <div class="documentation doc">
               <%= erb :documentation %>
             </div>
 
-            <input type="checkbox" class="help-toggle" id="challenges-button"></input>
-            <label class='help-challenges' for="challenges-button"><i class="fa fa-star"></i></label>
+            <input type="checkbox" class="help-toggle" id="challenge-button"></input>
+            <label class='help-challenges' for="challenge-button"><i class="fa fa-star"></i></label>
             <div class="documentation challenges_examples">
               <%= erb :challenges %>
             </div>
+          </div>
 
           </div>
-        </div>
-
         <div id="iframe--container" class="col-md-7 without-padding"></div>
       </div>
     </div>
