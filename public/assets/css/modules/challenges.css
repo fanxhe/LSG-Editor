@@ -6,3 +6,7 @@ input[class^="help-toggle"]:checked + label + .challenges_examples {
   height: auto;
   opacity: 1;
 }
+
+.challenges {
+  display: none;
+}
