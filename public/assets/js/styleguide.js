@@ -72,4 +72,12 @@ document.addEventListener('DOMContentLoaded', function() {
       showDoc.checked = false;
   });
 
+  var reset = document.getElementById('reset');
+  reset.addEventListener('click', function() {
+    document.getElementById('documentation-button').checked = false;
+    document.getElementById('challenge-button').checked = false;
+    editor.setValue("");
+    document.getElementById('iframe--container').innerHTML = "";
+  });
+
 });
