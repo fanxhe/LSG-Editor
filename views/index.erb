@@ -6,6 +6,7 @@
   <link rel="stylesheet" type="text/css" href="assets/css/modules/documentation-menu.css">
   <link rel="stylesheet" type="text/css" href="assets/css/modules/header.css">
   <link rel="stylesheet" type="text/css" href="assets/css/modules/challenges.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/modules/reset.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <script type="text/javascript" src= "assets/js/ace/ace.js"></script>
 </head>
@@ -38,16 +39,30 @@
 
           <div class="container-button">
             <input type="checkbox" class="help-toggle" id="documentation-button"></input>
-            <label class='help-documentation' for="documentation-button"><i class="fa fa-book"></i></label>
+            <label class='help-documentation over' for="documentation-button">
+              <i class="fa fa-book">
+                <span class= "txt">Help</span>
+              </i>
+            </label>
             <div class="documentation doc">
               <%= erb :documentation %>
             </div>
 
             <input type="checkbox" class="help-toggle" id="challenge-button"></input>
-            <label class='help-challenges' for="challenge-button"><i class="fa fa-star"></i></label>
+            <label class='help-challenges over' for="challenge-button">
+              <i class="fa fa-star">
+                <span class= "txt">Challenge</span>
+              </i>
+            </label>
             <div class="documentation challenges_examples">
               <%= erb :challenges %>
             </div>
+            <input type="checkbox" class="help-toggle" id="reset"></input>
+            <label class='clear over' for="reset">
+              <i class="fa fa-eraser">
+                <span class= "txt">Clear</span>
+              </i>
+            </label>
           </div>
 
           </div>

@@ -1,0 +1,8 @@
+.clear {
+  left: 205px;
+}
+
+input[id^="reset"]:checked + label {
+  background-color: #232323;
+  color: #fff;
+}
