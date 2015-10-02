@@ -1,6 +1,8 @@
 .button {
   background-color: #C42872;
   color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
   height: 113px;
   position: absolute;
   right: -56px;
