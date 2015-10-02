@@ -1,7 +1,7 @@
 .container-button {
   background-color: #232323 ;
   bottom: 0%;
-  height: 30px;
+  height: 35px;
   position: absolute;
   width: 100%;
   z-index: 9;
@@ -21,13 +21,27 @@ input[class^="help-toggle"] + label {
   height: 20px;
   margin: 0 auto 10px 10px;
   position: absolute;
-  top: 4px;
+  top: 8px;
   transition: all .6s;
   width: 20px;
 }
 
 .help-documentation {
-  left: 35px;
+  left: 60px;
+}
+
+.over:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.txt {
+  bottom: 7px;
+  color: #fff;
+  font-size: 10px;
+  text-align: center;
+  position: absolute;
+  right: 25px;
 }
 
 input[class^="help-toggle"]:checked + label {
@@ -53,7 +67,7 @@ input[class^="help-toggle"] ~ .documentation {
   position: absolute;
   right: 0px;
   transition: all .6s;
-  width: 95%;
+  width: 92%;
 }
 
 input[class^="help-toggle"]:checked + label + .doc {
@@ -63,9 +77,11 @@ input[class^="help-toggle"]:checked + label + .doc {
 
 .anchor {
   color: #2EF1BD;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .nav-tabs>li.active>a.anchor, .nav-tabs>li.active>a.anchor:hover, .nav-tabs>li>a.anchor:focus, .nav-tabs>li>a.anchor:hover {
-  background-color: #2EF1BD;
-  color: #fff;
+  background-color: #eafdf8;
+  color: #205A4A;
 }
