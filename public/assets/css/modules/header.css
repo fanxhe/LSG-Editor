@@ -181,3 +181,13 @@
 .diamond14:after {
   border-top: 50px solid #F4A7BE;
 }
+
+.diamond15  {
+  border-bottom: 20px solid #FF96B5 ;
+  bottom: 1030px;
+  left: 700px;
+}
+
+.diamond15:after {
+  border-top: 50px solid #FF96B5 ;
+}
