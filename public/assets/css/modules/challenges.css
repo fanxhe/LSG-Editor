@@ -1,5 +1,5 @@
 .help-challenges {
-  left: 65px;
+  left: 145px;
 }
 
 input[class^="help-toggle"]:checked + label + .challenges_examples {
