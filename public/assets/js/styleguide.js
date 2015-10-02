@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('documentation-button').checked = false;
     document.getElementById('challenge-button').checked = false;
     editor.setValue("");
-    ajax();
+    document.getElementById('iframe--container').innerHTML = "";
   });
 
 });
