@@ -20,6 +20,7 @@
 .header h1 {
   display: inline-block;
   color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 24px;
   z-index: 1;
 }
