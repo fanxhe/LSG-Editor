@@ -26,6 +26,7 @@
           <form id="formArea" method="post" action="/lsg" >
             <div class="col-md-12 without-padding">
               <div name="code_lsg" id="editor" class="code-area"></div>
+              <pre style="display: none;" id="docData"><%= CGI.escapeHTML(doc.data) %></pre>
             </div>
 
             <button type="submit" class="center-block button"> <span class= "text-button"> Generate</span>
@@ -72,10 +73,13 @@
     </div>
   </div>
 
+
   <script>
+
     var editor = ace.edit("editor");
     editor.setTheme("ace/theme/twilight");
     editor.getSession().setMode("ace/mode/markdown");
+
   </script>
   <script type="text/javascript" src="assets/js/styleguide.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

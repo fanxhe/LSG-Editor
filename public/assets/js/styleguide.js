@@ -22,6 +22,11 @@ var ajax = function(){
   req.send("code_lsg=" + encodeURIComponent(editor.getValue()));
 }
 
+var loadWelcomeMessage = function(){
+  var data = document.getElementById('docData');
+  editor.setValue(data.textContent);
+}
+
 var createIframe = function(result){
 
   var iframeResult = document.createElement('iframe');
@@ -52,6 +57,7 @@ var setChallenges = function(content){
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+  loadWelcomeMessage();
   ajax();
   document.getElementById('formArea').addEventListener('submit', generateStyleGuide);
   var all = document.querySelectorAll('.challenges_examples .anchor');
