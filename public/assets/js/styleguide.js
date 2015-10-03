@@ -25,6 +25,7 @@ var ajax = function(){
 var loadWelcomeMessage = function(){
   var data = document.getElementById('docData');
   editor.setValue(data.textContent);
+  editor.clearSelection();
 }
 
 var createIframe = function(result){
