@@ -22,10 +22,14 @@ GEM
 
 PLATFORMS
   ruby
+  x86_64-darwin-19
 
 DEPENDENCIES
   livingstyleguide (~> 2.0.0.alpha.10)
   sinatra (~> 1.4.6)
 
+RUBY VERSION
+   ruby 2.6.6p146
+
 BUNDLED WITH
-   1.10.6
+   2.2.14
