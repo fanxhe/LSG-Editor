@@ -8,7 +8,7 @@ GEM
       thor
       tilt
     minisyntax (0.2.5)
-    rack (1.6.4)
+    rack (1.6.13)
     rack-protection (1.5.3)
       rack
     redcarpet (3.3.2)
